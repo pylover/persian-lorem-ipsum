@@ -90,13 +90,11 @@ WORDS = [
     'نولا',
     'فاسیلیسی.']
 
-document['words'].value = len(WORDS)
-
+WORDS_LENGTH = len(WORDS)
 
 def go(ev):
     document['output'].value = '\n\n'.join(' '.join(WORDS[:int(document['words'].value)]) for i in range(int(document['paragraphs'].value)))
 
-
 document['version'] <= __version__
-
+document['words'].max = document['words'].value = WORDS_LENGTH
 document['go'].bind('click', go)
