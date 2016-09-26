@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="/brython.js"></script>
+</head>
+<body onload="brython()">
+<div id="innerBody">
+
+    <header>
+        <h1>لورم ایپسام فارسی</h1>
+    </header>
+
+    <label for="paragraphs">شمارگان پاراگراف</label>
+    <input type="number" id="paragraphs" value="1"/>
+    <br/>
+    <label for="words">شمارگان واژه</label>
+    <input type="number" type="words" id="words" value="1"/>
+    <br/>
+    <button id="go">Go</button>
+    <br/>
+    <textarea id="output"></textarea>
+
+    <footer>
+        Version: <span id="version"></span>
+        <br/>
+        Code by: Vahid Mardani
+        <br/>
+        Graphical interface: Will be designed by, Saeed Tavoosi.
+        <br/>
+        <a href="https://github.com/pylover/persian-lorem-ipsum">Github page</a>
+        <br/>
+        <a href="https://raw.githubusercontent.com/pylover/persian-lorem-ipsum/master/LICENSE.md">LICENSE</a>
+    </footer>
+</div>
+<script type="text/python" src="ipsum.py"></script>
+</body>
+</html>
