@@ -89,18 +89,20 @@ h1 {
 
 .text-box {
   position: relative;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .text-box #output {
   display: block;
   margin: 0 auto;
   min-height: 300px;
-  width: 80%;
+  width: 80vw;
 }
 
 .text-box .copy {
   position: absolute;
-  left: 11%;
+  left: 30px;
   bottom: 20px;
   width: 50px;
   display: block;
