@@ -7,6 +7,7 @@
     <title>لورم ایپسام فارسی</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="brython.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 </head>
 <body onload="brython()">
 <div id="innerBody" class="container">
@@ -27,8 +28,14 @@
             برو
         </div>
         <br/>
-        
-        <textarea id="output"></textarea>
+        <div class="text-box">
+            <textarea id="output"></textarea>
+            <div class="copy" data-clipboard-target="#output">
+                <span id="default">کپی</span>
+                <span id="done">✓</span>
+            </div>
+        </div>
+       
     </main>
     <footer>
         Version: <span id="version"></span>
@@ -43,5 +50,19 @@
     </footer>
 </div>
 <script type="text/python" src="ipsum.py"></script>
+<script>
+    var clipboard = new Clipboard('.copy');
+    clipboard.on('success', function(e) {
+        document.getElementById('default').style.display = "none";
+        document.getElementById('done').style.display = "inline";
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    document.getElementById('go').addEventListener('click', function() {
+        document.getElementById('default').style.display = "inline";
+        document.getElementById('done').style.display = "none";
+    })
+</script>
 </body>
 </html>
