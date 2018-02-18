@@ -87,17 +87,69 @@ h1 {
   direction: rtl;
 }
 
-#output {
+.text-box {
+  position: relative;
+}
+
+.text-box #output {
   display: block;
   margin: 0 auto;
   min-height: 300px;
   width: 80%;
 }
 
-@media screen and (max-width: 640px) {
-  #output {
-    width: 100%;
-  }
+.text-box .copy {
+  position: absolute;
+  left: 11%;
+  bottom: 20px;
+  width: 50px;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+  color: #fff;
+  border: 0 none;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 10px #e4e4e4;
+  color: #FFFFFF;
+  background: #416dea;
+}
+
+.text-box .copy #default {
+  display: inline;
+}
+
+.text-box .copy #done {
+  display: none;
+}
+
+.text-box .copy:hover {
+  transition: all 150ms linear;
+  opacity: .85;
+}
+
+.text-box .copy:active {
+  transition: all 150ms linear;
+  opacity: .75;
+}
+
+.text-box .copy:focus {
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
 }
 
 footer {
