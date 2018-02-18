@@ -3,20 +3,15 @@
   src: url("./fonts/Yekan.eot");
   src: url("./fonts/Yekan.eot?#iefix") format("embedded-opentype"), url("./fonts/Yekan.woff") format("woff"), url("./fonts/Yekan.ttf") format("truetype"), url("./fonts/Yekan.svg#BYekan") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-
+  font-style: normal; }
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  background: #cbd7f9;
-}
+  background: #cbd7f9; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 .button {
   width: fit-content;
@@ -43,119 +38,90 @@ body {
   appearance: none;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 5px 10px #e4e4e4;
-}
-
-.button:hover {
-  transition: all 150ms linear;
-  opacity: .85;
-}
-
-.button:active {
-  transition: all 150ms linear;
-  opacity: .75;
-}
-
-.button:focus {
-  outline: 1px dotted #959595;
-  outline-offset: -4px;
-}
+  box-shadow: 2px 5px 10px #e4e4e4; }
+  .button:hover {
+    transition: all 150ms linear;
+    opacity: 0.85; }
+  .button:active {
+    transition: all 150ms linear;
+    opacity: 0.75; }
+  .button:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px; }
 
 .button.blue {
   color: #FFFFFF;
-  background: #416dea;
-}
+  background: #416dea; }
 
 .container {
-  font-family: 'yekan' , tahoma, sans-serif;
-}
+  font-family: "yekan", tahoma, sans-serif; }
 
 .settings {
   margin: 0 auto;
-  width: 25em;
-}
-
-.settings span {
-  padding: 0 5px;
-}
+  width: 25em; }
+  .settings span {
+    padding: 0 5px; }
 
 h1 {
-  text-align: center;
-}
+  text-align: center; }
 
 #innerBody {
-  direction: rtl;
-}
+  direction: rtl; }
 
 .text-box {
   position: relative;
   margin: 0 auto;
-  width: fit-content;
-}
-
-.text-box #output {
-  display: block;
-  margin: 0 auto;
-  min-height: 300px;
-  width: 80vw;
-}
-
-.text-box .copy {
-  position: absolute;
-  left: 30px;
-  bottom: 20px;
-  width: 50px;
-  display: block;
-  padding: 10px;
-  cursor: pointer;
-  user-select: none;
-  transition: all 150ms linear;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: none !important;
-  text-transform: none;
-  text-transform: capitalize;
-  color: #fff;
-  border: 0 none;
-  border-radius: 100%;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.3;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 5px 10px #e4e4e4;
-  color: #FFFFFF;
-  background: #416dea;
-}
-
-.text-box .copy #default {
-  display: inline;
-}
-
-.text-box .copy #done {
-  display: none;
-}
-
-.text-box .copy:hover {
-  transition: all 150ms linear;
-  opacity: .85;
-}
-
-.text-box .copy:active {
-  transition: all 150ms linear;
-  opacity: .75;
-}
-
-.text-box .copy:focus {
-  outline: 1px dotted #959595;
-  outline-offset: -4px;
-}
+  width: fit-content; }
+  .text-box #output {
+    display: block;
+    margin: 0 auto;
+    min-height: 300px;
+    width: 80vw; }
+  .text-box .copy {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    width: 50px;
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    text-transform: capitalize;
+    color: #fff;
+    border: 0 none;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 10px #e4e4e4;
+    color: #FFFFFF;
+    background: #416dea; }
+    .text-box .copy #default {
+      display: inline; }
+    .text-box .copy #done {
+      display: none; }
+    .text-box .copy:hover {
+      transition: all 150ms linear;
+      opacity: 0.85; }
+    .text-box .copy:active {
+      transition: all 150ms linear;
+      opacity: 0.75; }
+    .text-box .copy:focus {
+      outline: 1px dotted #959595;
+      outline-offset: -4px; }
 
 footer {
   direction: ltr;
-  text-align: center;
-}
+  text-align: center; }
+
 /*# sourceMappingURL=styles.css.map */

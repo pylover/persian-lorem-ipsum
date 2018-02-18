@@ -7,6 +7,7 @@ clipboard.on('error', function(e) {
     console.log(e);
 });
 document.getElementById('go').addEventListener('click', function() {
+    document.getElementsByClassName('copy')[0].style.display = "block";
     document.getElementById('default').style.display = "inline";
     document.getElementById('done').style.display = "none";
 });
