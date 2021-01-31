@@ -2,5 +2,5 @@
 
 Lorem ipsum dolor sit amet! for persian.
 
-visit: http://persianlorem.ir
+visit: https://pylover.github.io/persian-lorem-ipsum/
 
